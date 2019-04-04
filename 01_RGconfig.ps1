@@ -9,5 +9,5 @@ Select-AzSubscription -SubscriptionName $subscrName
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 $rgName="AzureTestLab01"
-$locName="<West US>"
+$locName="West US"
 New-AzResourceGroup -Name $rgName -Location $locName
