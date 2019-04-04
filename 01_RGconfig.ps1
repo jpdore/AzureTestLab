@@ -2,7 +2,7 @@ Connect-AzAccount
 
 Get-AzSubscription | Sort Name | Select Name
 
-$subscrName="無料試用版"
+$subscrName="Free Trial"
 Select-AzSubscription -SubscriptionName $subscrName
 
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
