@@ -12,3 +12,4 @@ Add-ADPrincipalGroupMembership -Identity "CN=User1,CN=Users,DC=corp,DC=contoso,D
 ## ログオフ
 ## RDP再接続
 ## corp\User1 でログオン
+Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
