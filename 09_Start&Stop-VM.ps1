@@ -1,3 +1,11 @@
+## Azureへの接続
+Connect-AzAccount
+
+##サブスクリプションの選択
+Get-AzSubscription | Sort Name | Select Name
+$subscrName="Free Trial"
+Select-AzSubscription -SubscriptionName $subscrName
+
 ## VMの起動
 $rgName="AzureTestLab01"
 Start-AzVM -ResourceGroupName $rgName -Name "DC1"
