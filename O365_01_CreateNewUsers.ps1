@@ -13,3 +13,6 @@ New-MsolUser -DisplayName "User 4" -FirstName User -LastName 4 -UserPrincipalNam
 
 $userName= "user5@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 5" -FirstName User -LastName 5 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
+
+Get-MSolUser | Sort UserPrincipalName | Select UserPrincipalName
+
